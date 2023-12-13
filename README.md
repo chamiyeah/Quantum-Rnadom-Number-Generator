@@ -58,13 +58,16 @@ For the complete random number generator, you need to include two other librarie
 By mesuring the value of the Qbit in quantum superposition, we can have a truely random starting point. We can utalize a classical for loop to genarate the number within given parameters.
 
  ``` SampleRandomNumberInRange``` operation uses a for loop to genarate large complex numbers.
- 
+
 
 ### Setting min & max ###
 
-    The ``` SampleRandomNumberInRange ``` operation now takes two parameters: ```min``` and ```max```.
+    The ``` SampleRandomNumberInRange ```
+     operation now takes two parameters:
+     ```min and max``` .
 
-    The repeat loop continues until the generated output is within the specified range (```min``` to ```max```).
+    The repeat loop continues until the generated output is within the specified range 
+    ```min``` to ```max```.
 
     The ```SampleRandomNumber``` entry point sets both the minimum ```min``` and maximum ```max``` values.
 
