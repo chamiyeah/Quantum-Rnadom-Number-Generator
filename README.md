@@ -23,6 +23,14 @@ You start by taking a qubit in a basis state, for example zero. The first step o
 
     ## ##
 
+### Prerequisites ###
+
+    .NET Core 6.0
+    Visual Studio Code
+    Microsoft Quantum Development Kit (QDK) for VS Code
+
+
+
 ### required libraries ###
 
 Standard Libraries
