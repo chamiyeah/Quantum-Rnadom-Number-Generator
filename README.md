@@ -35,9 +35,9 @@ You start by taking a qubit in a basis state, for example zero. The first step o
 
 Standard Libraries
 
-    ```Microsoft.Quantum.Canon;
+       Microsoft.Quantum.Canon;
        Microsoft.Quantum.Intrinsic;
-       Microsoft.Quantum.Measurement; ``` 
+       Microsoft.Quantum.Measurement; 
        
 For the complete random number generator, you need to include two other libraries: ```Microsoft.Quantum.Math``` and ```Microsoft.Quantum.Convert```.
 
@@ -61,15 +61,11 @@ By mesuring the value of the Qbit in quantum superposition, we can have a truely
 
 
 ### Setting min & max ###
+The ```SampleRandomNumberInRange``` oparation now takes two parameters. ```min``` and ```max```.
 
-    The ``` SampleRandomNumberInRange ```
-     operation now takes two parameters:
-     "min" and "max".
+The repeat loop continues until the generated output is within the specified range ```min``` to ```max```.
 
-    The repeat loop continues until the generated output is within the specified range 
-    "min" to "max".
-
-    The ```SampleRandomNumber``` entry point sets both the minimum "min" and maximum "max" values.
+The ```SampleRandomNumber``` entrypint sets both the minimum ```min``` and maximum ```max``` values.
 
 Now, when you call ```SampleRandomNumber()```, it will generate a random number within the specified range [min, max]. Adjust the values of min and max accordingly based on your requirements.
 
