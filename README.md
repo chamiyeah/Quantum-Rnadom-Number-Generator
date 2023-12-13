@@ -64,12 +64,12 @@ By mesuring the value of the Qbit in quantum superposition, we can have a truely
 
     The ``` SampleRandomNumberInRange ```
      operation now takes two parameters:
-     ```min and max``` .
+     "min" and "max".
 
     The repeat loop continues until the generated output is within the specified range 
-    ```min``` to ```max```.
+    "min" to "max".
 
-    The ```SampleRandomNumber``` entry point sets both the minimum ```min``` and maximum ```max``` values.
+    The ```SampleRandomNumber``` entry point sets both the minimum "min" and maximum "max" values.
 
 Now, when you call ```SampleRandomNumber()```, it will generate a random number within the specified range [min, max]. Adjust the values of min and max accordingly based on your requirements.
 
