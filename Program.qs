@@ -15,23 +15,26 @@ namespace QuantumRNG {
         // Measure the qubit value.
         return M(q);
     }
-     // Genarating Rnadom Number
-     operation SampleRandomNumberInRange(max : Int) : Int {
-        mutable output = 0; 
+
+    // Genarating Random Number
+    operation SampleRandomNumberInRange(min : Int, max : Int) : Int {
+        mutable output = 0;
         repeat {
-            mutable bits = []; 
+            mutable bits = [];
             for idxBit in 1..BitSizeI(max) {
-                set bits += [GenerateRandomBit()]; 
+                set bits += [GenerateRandomBit()];
             }
             set output = ResultArrayAsInt(bits);
-        } until (output <= max);
+        } until (output >= min and output <= max);
         return output;
     }
-        // Setting entry point
-     @EntryPoint()
+
+    // Setting entry point
+    @EntryPoint()
     operation SampleRandomNumber() : Int {
-        let max = 50; // Set max
-        Message($"Sampling a random number between 0 and {max}: ");
-        return SampleRandomNumberInRange(max);
+        let min = 100000; // Set min
+        let max = 500000; // Set max
+        Message($"Sampling a random number between {min} and {max}: ");
+        return SampleRandomNumberInRange(min, max);
     }
 }
