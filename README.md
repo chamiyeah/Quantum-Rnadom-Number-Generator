@@ -31,9 +31,10 @@ You start by taking a qubit in a basis state, for example zero. The first step o
 
 
 
-### required libraries ###
+### Required libraries ###
 
 Standard Libraries
+
     ```Microsoft.Quantum.Canon;
        Microsoft.Quantum.Intrinsic;
        Microsoft.Quantum.Measurement; ``` 
